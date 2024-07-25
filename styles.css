@@ -68,6 +68,26 @@ ul li {
     text-align: center;
 }
 
+#links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#links ul li {
+    background: #d1b89e; /* Coffee cream color */
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 auto;
+    max-width: calc(50% - 10px); /* Adjusts to fit two items per row */
+    text-align: center;
+}
+
 a {
     color: #6f4e28; /* Coffee bean color */
     text-decoration: none;
@@ -112,6 +132,11 @@ footer {
         padding: 6px 10px;
         max-width: calc(50% - 10px);
     }
+    #links ul li {
+        font-size: 0.8em;
+        padding: 6px 10px;
+        max-width: calc(50% - 10px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -138,6 +163,11 @@ footer {
     }
 
     #skills ul li {
+        font-size: 0.8em;
+        padding: 5px 8px;
+        max-width: calc(100% - 10px); /* Stacks items in a single column */
+    }
+    #links ul li {
         font-size: 0.8em;
         padding: 5px 8px;
         max-width: calc(100% - 10px); /* Stacks items in a single column */

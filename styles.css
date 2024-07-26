@@ -1,54 +1,70 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #3b2c1f; /* Dark coffee color */
-    background-color: #f5f5f5; /* Light coffee color */
+    color: #4B2E26; /* Dark coffee brown */
+    background-color: #F5F1E8; /* Light coffee cream */
     padding: 10px;
 }
 
+/* Container Styles */
 header, section, footer {
     margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #d1b89e; /* Coffee cream border */
+    max-width: 900px;
+    background-color: #FFFFFF; /* White */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0C1A5; /* Light brown border */
 }
 
+/* Header Styles */
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
-    color: #6f4e28; /* Coffee bean color */
+    color: #6F4E37; /* Medium coffee brown */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
 
-header p, section p {
+header p {
     margin: 10px 0;
+    font-size: 1em;
+    color: #7A5230; /* Warm brown */
 }
 
+/* Section Title Styles */
 section h2 {
-    border-bottom: 2px solid #6f4e28; /* Coffee bean color */
+    border-bottom: 2px solid #6F4E37; /* Medium coffee brown */
     padding-bottom: 10px;
     margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #6f4e28; /* Coffee bean color */
+    font-size: 1.8em;
+    color: #6F4E37; /* Medium coffee brown */
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
+/* List Styles */
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 ul li {
-    background: #d1b89e; /* Coffee cream color */
+    background: #FAF3E0; /* Very light cream */
     margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #E0C1A5; /* Light brown border */
+    font-size: 1em;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
-#skills ul {
+/* Skills and Links Section Styles */
+#skills ul, #links ul {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -56,51 +72,41 @@ ul li {
     gap: 10px;
 }
 
+
+
+#skills ul li, #links ul li {
+    max-width: calc(50% - 10px);
+    text-align: center;
+    font-size: 0.9em;
+    background: #FFFFFF; /* White */
+    border: 1px solid #E0C1A5; /* Light brown border */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    padding: 8px 12px;
+    margin: 5px;
+    flex: 1 1 auto;
+}
 #skills ul li {
-    background: #d1b89e; /* Coffee cream color */
-    margin: 5px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;
-    max-width: calc(50% - 10px); /* Adjusts to fit two items per row */
-    text-align: center;
+    background: #FAF3E0;
 }
 
-#links ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
 
-#links ul li {
-    background: #d1b89e; /* Coffee cream color */
-    margin: 5px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;
-    max-width: calc(50% - 10px); /* Adjusts to fit two items per row */
-    text-align: center;
-}
-
+/* Link Styles */
 a {
-    color: #6f4e28; /* Coffee bean color */
+    color: #6F4E37; /* Medium coffee brown */
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     font-size: 0.9em;
-    color: #6f4e28; /* Coffee bean color */
+    color: #7A5230; /* Warm brown */
+    margin-top: 20px;
 }
 
 /* Responsive Design */
@@ -110,42 +116,33 @@ footer {
         max-width: 90%;
     }
 
-    body {
-        padding: 20px 10px; /* Add padding for responsive design */
-    }
-
     header h1 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     section h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     ul li {
         font-size: 0.9em;
-        padding: 8px;
+        padding: 10px;
     }
 
-    #skills ul li {
-        font-size: 0.8em;
+    #skills ul li, #links ul li {
+        max-width: calc(100% - 10px);
         padding: 6px 10px;
-        max-width: calc(50% - 10px);
-    }
-    #links ul li {
         font-size: 0.8em;
-        padding: 6px 10px;
-        max-width: calc(50% - 10px);
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     body {
-        padding: 20px 10px; /* Add padding for smaller screens */
+        padding: 15px 10px; /* Add padding for smaller screens */
     }
 
     header, section, footer {
@@ -154,20 +151,15 @@ footer {
     }
 
     section h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     ul li {
         font-size: 0.8em;
-        padding: 6px;
+        padding: 8px;
     }
 
-    #skills ul li {
-        font-size: 0.8em;
-        padding: 5px 8px;
-        max-width: calc(100% - 10px); /* Stacks items in a single column */
-    }
-    #links ul li {
+    #skills ul li, #links ul li {
         font-size: 0.8em;
         padding: 5px 8px;
         max-width: calc(100% - 10px); /* Stacks items in a single column */
@@ -177,6 +169,7 @@ footer {
         font-size: 0.8em;
     }
 }
+
 
 
 

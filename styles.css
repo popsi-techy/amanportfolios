@@ -20,6 +20,16 @@ header, section, footer {
     border: 1px solid #E0C1A5; /* Light brown border */
 }
 
+#floating-gif {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: 225px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 /* Header Styles */
 header h1 {
     font-size: 2.5em;
